@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,18 +180,19 @@
             connect, feel free to reach out! I would love to hear from you.
             </div>
 
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name">
+            <form action="mailto:katherineramos722@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="you@email.com" required>
 
-                <label for="message">Message</label>
-                <textarea id="message" cols="30" rows="10"></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
+  <button type="submit">Send Message</button>
+</form>
+
         </div>
     </section>
 </main>
