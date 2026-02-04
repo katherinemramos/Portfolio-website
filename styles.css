@@ -229,56 +229,82 @@ transition: .1s;
 }
 
 /* Sectoin 4: Contact */
+/* Section 4: Contact */
 .contact-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+  padding: 0 50px;
+  margin-bottom: 100px;
 }
 
 .contact-section h2 {
-    font-size: 35px;
+  font-size: 35px;
+  margin-bottom: 12px;
 }
 
 .contact-section .group {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
 }
 
-.contact-section .group .text{
-    flex: 3;
-    margin-top: 20px;
+.contact-section .group .text {
+  flex: 1;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 520px;
+}
+
+.contact-section .group form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 320px;
+}
+
+.contact-section .group form label {
+  font-weight: 600;
+  margin-top: 6px;
 }
 
 .contact-section .group form input,
 .contact-section .group form textarea {
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--link-color);
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
 }
 
-.contact-section .group form button{
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background-color: var(--link-color);
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.1s;
+.contact-section .group form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-section .group form input:focus,
+.contact-section .group form textarea:focus {
+  border-color: var(--text-color);
+}
+
+.contact-section .group form button {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.15s;
 }
 
 .contact-section .group form button:hover {
-    filter:brightness(.9);
+  filter: brightness(0.9);
+  transform: translateY(-1px);
 }
 
-.contact-section .group form{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
 
 
 
@@ -373,3 +399,4 @@ transition: .1s;
 }
 
 }
+
