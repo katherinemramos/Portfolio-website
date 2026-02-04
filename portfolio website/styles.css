@@ -1,0 +1,376 @@
+    :root {
+        --text-color: #1a1c20;
+        --link-color: #4a76ee;
+        --background-color: #c5c5c5;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--background-color);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+     color: var(--text-color);
+     font-size: 22px;
+     font-weight: 600;
+}
+
+nav .right a {
+     color: var(--text-color);
+     margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+margin-left: 5px;
+}
+/* Section 1: hero */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-size: 45px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+display: inline-block;
+padding: 5px 10px;
+border: 2px solid var(--link-color);
+border-radius: 5px;
+margin-right: 10px;
+margin-bottom: 10px;
+transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img{
+    border-radius: 50%;
+    width: 350px
+}
+
+/* SECTION 2: SKILLS*/
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skills-section .cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skills-section .cell img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.skills-section .cell span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #545454;
+}
+
+/* Sectoin 3: Projects */
+.projects-section {
+    padding: 70px 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.projects-subtext {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+}
+
+.projects-subtext a {
+    color: var(--link-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.project-card h3 {
+    margin: 14px 0 8px;
+    font-size: 18px;
+}
+
+.project-card p {
+    margin: 0 0 18px;
+    line-height: 1.45;
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.project-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Sectoin 4: Contact */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.contact-section .group form button:hover {
+    filter:brightness(.9);
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-image img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    /*Section 1: hero */
+    .hero-section .text h2 {
+    font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    /*Section 1: hero */
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+/* Sectoin 3: Projects*/
+.project-section {
+    text-align: center;
+}
+
+.project-card .group {
+    flex-direction: column;
+}
+/* Sectoin 4: Contact */
+.contact-section .group {
+    flex-direction: column;
+}
+}
+
+
+@media (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+    }
+    
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+/* SECTION 1: HERO*/
+.hero-section {
+    padding: 0 20px;
+}
+
+.hero-section .text h2 {
+    font-size: 30px;
+}
+
+/* SECTION 2: SKILLS*/
+.skills-section {
+    padding: 0 20px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 16px;
+}
+
+/* Sectoin 3: Projects */
+
+.project-section {
+    padding: 0 20px;
+}
+
+/* Sectoin 4: Contact */
+.contact-section {
+    padding: 0 20px;
+}
+
+}
+
